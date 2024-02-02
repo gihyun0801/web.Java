@@ -55,6 +55,7 @@ public class VariableExample4 {
    	       int result6 = i6 + 1;
    	       System.out.println(result6);
    	       
+   	    
    	       
    	       
    	       
