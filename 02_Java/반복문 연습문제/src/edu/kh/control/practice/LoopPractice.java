@@ -356,9 +356,10 @@ for(int i = 0; i < num; i++) {
 				result += second + " " + third + " ";
 			}else {
 				result += second + " ";
+				
 			}
 			
-			System.out.print(result);
+			
 			
 			
 			
@@ -370,7 +371,7 @@ for(int i = 0; i < num; i++) {
 			
 		}
 		
-		
+		System.out.print(result);
 		
 	}
 	

@@ -112,7 +112,7 @@ public class ForExample {
 		
 		System.out.print("괄호에 표시할 수 : ");
 		int num = sr.nextInt();
-		String result = 0;
+		String result = "";
 		
 		for(int i = 1; i <= 20; i++) {
 			
@@ -231,7 +231,7 @@ public void ex8() {
 			sha += i;
 			count ++;
 		}
-		
+	  
 		
 	}
 	
