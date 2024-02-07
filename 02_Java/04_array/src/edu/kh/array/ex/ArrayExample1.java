@@ -31,7 +31,7 @@ public class ArrayExample1 {
 		System.out.println("num에 저장된 값 : " + num);
 		//num이 작성된 자리에 num에 저장된 값을 읽어와서 출력
 		
-		
+	
 		//-----------------------------------------------------
 		
 		//배열 선언

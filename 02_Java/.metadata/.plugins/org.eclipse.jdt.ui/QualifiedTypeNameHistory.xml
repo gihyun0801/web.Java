@@ -3,12 +3,16 @@
     <fullyQualifiedTypeName name="come.kh.variable.practice2.Practice2"/>
     <fullyQualifiedTypeName name="come.kh.variable.practice2.Practice1"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
     <fullyQualifiedTypeName name="come.kh.variable.run.PracticeRun3"/>
     <fullyQualifiedTypeName name="come.kh.variable.practice2.Practice3"/>
     <fullyQualifiedTypeName name="edu.kh.op.ex.OpExample"/>
     <fullyQualifiedTypeName name="edu.kh.op.practice.run.PracticeRun.give"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.vo.People"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.abstraction.model.service.AbstractionService"/>
+    <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
+    <fullyQualifiedTypeName name="edu.kh.Account.service.AccountRun"/>
+    <fullyQualifiedTypeName name="edu.kh.Account.vo.Account"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
