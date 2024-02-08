@@ -14,5 +14,9 @@
     <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
     <fullyQualifiedTypeName name="edu.kh.Account.service.AccountRun"/>
     <fullyQualifiedTypeName name="edu.kh.Account.vo.Account"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.TestVO"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.Student"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.cls.model.service.ClsService"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.User"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
