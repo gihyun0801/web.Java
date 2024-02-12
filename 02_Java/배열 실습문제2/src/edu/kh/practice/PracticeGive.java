@@ -10,60 +10,79 @@ public void practice() {
 Scanner sc = new Scanner(System.in);
 
 System.out.print("배열의 크기를 입력하세요 : ");
-int str = sc.nextInt();
+int num = sc.nextInt();
 
-String[] arr = new String[str];
+sc.nextLine();
 
-int shot = 0 ;
+String[] arr = new String[num];
 
-for(int i = 0; i < str; i++) {
-	shot++;
-	System.out.printf("%d 번째 문자열 : \n", shot);
-	String book = sc.next();
-	arr[i] = book;
+int count = 1;
 
+for(int i = 0; i < arr.length; i++) {
+	System.out.printf("%d 번째 문자열 : ", i + 1);
+	String str = sc.nextLine();
+	count++;
+	
 }
 
-
-int count = 0;
 while(true) {
-	System.out.print("값을 더 입력하시겠습니까? : ");
-	String yesNo = sc.next();
 	
+	System.out.print("더 값을 입력하시겠습니까 ? : ");
+	char ch = sc.next().charAt(0);
 	
-	if(yesNo.equals("y")) {
+	if(ch == 'y' || ch == 'Y') {
 		
+		System.out.print("더 입력하고 싶은 개수 : ");
+		int add = sc.nextInt();
+		sc.nextLine();
 		
-		System.out.print("입력하고 싶은 개수 : ");
-		int more = sc.nextInt();
+		String [] result = new String[arr.length + add];
 		
-		System.out.printf("%d 번째 문자열 : ", shot);
-		String good = sc.next();
-		String[] arr2 = new String[more];
-		for(int i = 0; i < more; i++) {
-			shot++;
-			arr2[count] = good;
-					count++;
+		for(int i = 0; i < result.length; i++) {
+			
+			if(i < arr.length) {
+				result[i] = arr[i];
+			}else {
+				System.out.printf("%d번째 문자열 : ", count++);
+				String ya = sc.nextLine();
+				
+				result[i] = ya;
+			}
 			
 		}
-
-			 
 		
+		arr = result;
 		
 	}else {
-		   break;
-		   
-		   
+		break;
 	}
 	
 }
-
-
-String result[] = Arrays.copyOf(arr, arr.length);
-
+System.out.println(arr);
 
 
 
-}
+
+
+
 	
+
+	
+}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+//xxx
 }

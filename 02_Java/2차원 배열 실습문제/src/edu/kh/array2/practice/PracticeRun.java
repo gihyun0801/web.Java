@@ -8,7 +8,12 @@ public class PracticeRun {
 //		sc.practice1();
 //		sc.practice2();
 //		sc.practice3();
-		sc.practice4();
+//		sc.practice4();
+//		sc.practice5();
+//		sc.practice6();
+//		sc.practice7();
+//		sc.practice8();
+//		sc.practice9();
 	}
 	
 	

@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="come.kh.variable.practice2.Practice2"/>
     <fullyQualifiedTypeName name="come.kh.variable.practice2.Practice1"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="come.kh.variable.run.PracticeRun3"/>
     <fullyQualifiedTypeName name="come.kh.variable.practice2.Practice3"/>
     <fullyQualifiedTypeName name="edu.kh.op.ex.OpExample"/>
@@ -18,5 +17,19 @@
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.Student"/>
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.service.ClsService"/>
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.User"/>
+    <fullyQualifiedTypeName name="edu.kh.gihyun.run.Run"/>
+    <fullyQualifiedTypeName name="edu.kh.gihyun.vo.Vo"/>
+    <fullyQualifiedTypeName name="edu.kh.gihyun.vo.service.Service"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.practice.model.vo.Book.Book"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.practice.model.vo.BookService.SerVice"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.awt.print.Book"/>
+    <fullyQualifiedTypeName name="런.Run"/>
+    <fullyQualifiedTypeName name="연습종합.Run"/>
+    <fullyQualifiedTypeName name="edu.kh.gihyun.vo.ValueOf"/>
+    <fullyQualifiedTypeName name="edu.kh.gihyun.vo.Service.Service"/>
+    <fullyQualifiedTypeName name="edu.kh.practice.snack.model.vo.Snack"/>
+    <fullyQualifiedTypeName name="edu.kh.snack.view.SnackMenu"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="edu.kh.practice.snack.controller.SnackController"/>
 </qualifiedTypeNameHistroy>
