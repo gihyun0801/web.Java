@@ -5,23 +5,19 @@ import edu.kh.gihyun.vo.Vo;
 public class Service{
 	
 	public void ex1() {
-		Vo sr = new Vo(25);
 		
+		Vo sr = new Vo("길동", "010-5260-8965");
+
+		System.out.println("===================");
+		
+		Vo sr3 = new Vo("영희", "010-6643-2026", "쌍문");
+		
+		
+	    
+	};
 	
-		
-		System.out.println(sr.getAge());
-		
-	}
 	
 	
-	public void ex2() {
-		Vo sr2 = new Vo();
-		sr2.setAge(100);
-		
-		System.out.println(sr2.getAge());
-		
-		
-	}
-	
+	 
 	
 }

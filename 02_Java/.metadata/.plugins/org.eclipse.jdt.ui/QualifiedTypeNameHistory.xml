@@ -30,6 +30,8 @@
     <fullyQualifiedTypeName name="edu.kh.gihyun.vo.Service.Service"/>
     <fullyQualifiedTypeName name="edu.kh.practice.snack.model.vo.Snack"/>
     <fullyQualifiedTypeName name="edu.kh.snack.view.SnackMenu"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="edu.kh.practice.snack.controller.SnackController"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.method.model.vo.Member"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="edu.kh.oop.method.model.service.MemberService"/>
 </qualifiedTypeNameHistroy>

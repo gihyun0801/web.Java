@@ -8,7 +8,6 @@ public class Run {
 		Service run = new Service();
 		
 		run.ex1();
-		run.ex2();
 	
 	
 	}

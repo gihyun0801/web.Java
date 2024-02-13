@@ -23,7 +23,7 @@ public class Snack {
 	}
 	
 	public String information() {
-		return
+		return null;
 	}
 
 	public String getKind() {

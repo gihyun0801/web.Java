@@ -34,10 +34,19 @@ public void menu() {
 	
 	
 	
+	
+	
+	
 	System.out.println("저장 완료되었습니다.");
 	
 	
+	System.out.printf("저장된 정보를 확인하시겠습니까? (y/n) : ");
 	
+	char ch = sc.next().charAt(0);
+	
+	if(ch == 'y' || ch == 'Y') {
+		System.out.println(scr.confirmDate());
+	}
 	
 	
 	
