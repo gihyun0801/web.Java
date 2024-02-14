@@ -36,7 +36,10 @@
     <fullyQualifiedTypeName name="edu.kh.oarr.model.vo.MemberService.Service"/>
     <fullyQualifiedTypeName name="edu.kh.gihyun.vo.service.Service"/>
     <fullyQualifiedTypeName name="edu.kh.gihyun.vo.Member"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="com.hw1.model.vo.Employee.Employee"/>
+    <fullyQualifiedTypeName name="com.hw3.model.vo.Product"/>
+    <fullyQualifiedTypeName name="com.hw3.controller.ProductController"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="edu.kh.practice.vo.Employee"/>
 </qualifiedTypeNameHistroy>
