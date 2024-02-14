@@ -19,7 +19,6 @@
     <fullyQualifiedTypeName name="edu.kh.oop.cls.model.vo.User"/>
     <fullyQualifiedTypeName name="edu.kh.gihyun.run.Run"/>
     <fullyQualifiedTypeName name="edu.kh.gihyun.vo.Vo"/>
-    <fullyQualifiedTypeName name="edu.kh.gihyun.vo.service.Service"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.vo.Book.Book"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.vo.BookService.SerVice"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -32,6 +31,12 @@
     <fullyQualifiedTypeName name="edu.kh.snack.view.SnackMenu"/>
     <fullyQualifiedTypeName name="edu.kh.practice.snack.controller.SnackController"/>
     <fullyQualifiedTypeName name="edu.kh.oop.method.model.vo.Member"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="edu.kh.oop.method.model.service.MemberService"/>
+    <fullyQualifiedTypeName name="edu.kh.oarr.model.vo.Member.Member"/>
+    <fullyQualifiedTypeName name="edu.kh.oarr.model.vo.MemberService.Service"/>
+    <fullyQualifiedTypeName name="edu.kh.gihyun.vo.service.Service"/>
+    <fullyQualifiedTypeName name="edu.kh.gihyun.vo.Member"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="com.hw1.model.vo.Employee.Employee"/>
 </qualifiedTypeNameHistroy>

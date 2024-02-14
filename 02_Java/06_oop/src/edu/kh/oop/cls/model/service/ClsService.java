@@ -17,9 +17,9 @@ public class ClsService extends Student{
 		
 		
 		System.out.println(std.v1);
-		System.out.println(std.v2);
-		System.out.println(std.v3);
-		System.out.println(std.v4);
+//		System.out.println(std.v2);
+//		System.out.println(std.v3);
+//		System.out.println(std.v4);
 		
 		//상속 관계에서 직접 접근 가능 범위
 //		System.out.println(v1);
