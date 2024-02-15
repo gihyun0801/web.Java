@@ -21,7 +21,6 @@
     <fullyQualifiedTypeName name="edu.kh.gihyun.vo.Vo"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.vo.Book.Book"/>
     <fullyQualifiedTypeName name="edu.kh.oop.practice.model.vo.BookService.SerVice"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.awt.print.Book"/>
     <fullyQualifiedTypeName name="런.Run"/>
     <fullyQualifiedTypeName name="연습종합.Run"/>
@@ -40,6 +39,19 @@
     <fullyQualifiedTypeName name="com.hw1.model.vo.Employee.Employee"/>
     <fullyQualifiedTypeName name="com.hw3.model.vo.Product"/>
     <fullyQualifiedTypeName name="com.hw3.controller.ProductController"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="edu.kh.practice.vo.Employee"/>
+    <fullyQualifiedTypeName name="com.hw4.view.MemberMenu"/>
+    <fullyQualifiedTypeName name="com.hw4.controller.MemberController"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Student"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.service.InheritanceService"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Employee"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Person"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Phone.SmartPhone"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Phone.BasicPhone"/>
+    <fullyQualifiedTypeName name="edu.kh.inheritance.model.dto.Phone.Phone"/>
+    <fullyQualifiedTypeName name="com.hw1.model.vo.Student"/>
+    <fullyQualifiedTypeName name="com.hw1.run.Run.Run"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.hw1.model.vo.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
