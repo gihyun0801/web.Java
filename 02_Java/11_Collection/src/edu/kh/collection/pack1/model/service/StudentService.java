@@ -1,11 +1,14 @@
-package edu.kh.collection.model.service;
+package edu.kh.collection.pack1.model.service;
 
 import java.util.ArrayList; // List 를 상속받아 사용
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.List; // Interface
 import java.util.Scanner;
-import edu.kh.collection.model.vo.Student;
+
+import edu.kh.collection.pack1.model.vo.Student;
 
 public class StudentService {
       //필드
@@ -48,10 +51,10 @@ public class StudentService {
 		// * 매개변수 타입이 Object == 모든 객체를 매개변수로 전달할 수 있음
       
 		studentList.add(new Student()); // 0번 인덱스 괄호안에 Object 가 빠졋다 그래서 값을 넣으면 업캐스팅이되서 NEW STUDENT 가 object의 부모가 된다
-		studentList.add(sc); // 1번 인덱스 
-		studentList.add("문자열"); // 2번 인덱스 스트링도 객체화 되서 들어감
-		studentList.add(new Object()); // 3번 인덱스
-		
+//		studentList.add(sc); // 1번 인덱스 
+//		studentList.add("문자열"); // 2번 인덱스 스트링도 객체화 되서 들어감
+//		studentList.add(new Object()); // 3번 인덱스
+//		
 		// 컬렉션 특징 : 여러 타입의 데이터를 저장할 수 있다
 		// 만약에 int 배열을 만들면 int만들어가야되는데 얘는 타입이달라도 가능
 		
@@ -101,6 +104,8 @@ public class StudentService {
 			System.out.println("4. 학생 정보 제거");
 			System.out.println("5. 이름으로 검색(일치)");
 			System.out.println("6. 이름으로 검색(포함)");
+			System.out.println("7. 나이순으로 정렬"); //Comparable 사용
+			System.out.println("8. 이름순으로 정렬"); //Comparator 사용
 			System.out.println("0. 프로그램종료");
 			
 		
@@ -120,7 +125,9 @@ public class StudentService {
 				case 3 :System.out.println( updateStudent()); break;  
 				case 4 : System.out.println( removeStudent()); break;
 				case 5 : System.out.println(searchName1()); break; 
-				case 6 : System.out.println(searchName2());; break;
+				case 6 : searchName2(); break;
+//				case 7 : sortByAge(); break;
+				case 8 : sortByName(); break;
 				case 0 : System.out.println("프로그램 종료"); break;
 				default : System.out.println("메뉴에 작성된 번호만 입력하세요");    break;
 				}
@@ -434,7 +441,7 @@ return "실패";
 	 * 검색결과가 없습니다
 	 * 
 	 */
-	public String searchName2(){ 
+	public void searchName2(){ 
 		
 		//String.contains(문자열) == 반환형은 boolean : string에 문자열이 포함되어 있으면 true/ 없으면 false
         
@@ -443,12 +450,13 @@ return "실패";
 		System.out.print("이름을 입력해주세요 : ");
 		String name = sc.next();
 		
-		
+		boolean flag = true;
 		
 		for(Student std : studentList) {
 			
 			if(std.getName().contains(name)) {
-				return "찾으시려는 이름의 학생의 정보는 아마도  : " + std; 
+				System.out.println(std); 
+				flag= false;
 			}
 			
 			
@@ -456,12 +464,86 @@ return "실패";
 		
 		
 		
-		return "찾으시려는 정보가 없습니다";
+		if(flag) {
+			System.out.println("찾으시는 학생의 정보가없음");
+		}
 	}
 	
 	
 	
+//	public void sortByAge() {
+		// 나이에 따라 오름차순 정렬
+//		Collections.sort(studentList);
+//		
+//		//정렬된 결과 출력
+//		
+//		for(Student std : studentList) {
+//			System.out.println(std);
+//		}
+//	}
 	
+	public void sortByName() {
+		
+		// 이름에 따라 정렬하는 Comparator 객체 생성
+//		Comparator<Student> nameComparator = Comparator.comparing(Student::getName);
+		//Comparator 인터페이스의 static 메서드인 comparing()을 사용하여 Comparator를 생성
+		//-> comparing()는 주어진 키(Key)를 기반으로 객체를 비교함.
+		// Student::getName ; 메서드 레퍼런스
+		//Student 클래스의 getName() 메서더를 가리키는 것
+		// -> 이 메서드를 비교의 키로 사용하여 각 Student 객체를 비교하고 정렬함.
+		// Comparator<Student> nameCoparator = Comparator.comparing(Student::getName);
+		// 이름을 기준으로 학생객체를 비교하는 Comparator 를 생성
+		
+		
+		
+		// 이름에 따라 정렬
+		
+//		Collections.sort(studentList, nameComparator);
+//		
+//		for(Student std : studentList) {
+//			System.out.println(std);
+//		}
+		
+		Comparator<Student> name = Comparator.comparing(Student::getName);
+		Comparator<Student> age = Comparator.comparing(Student::getAge).reversed();
+		
+		
+		
+		
+		
+		
+		Collections.sort(studentList, name);
+		Collections.sort(studentList, age);
+		
+		for(Student std : studentList) {
+			System.out.println(std);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 	
 	
 	
