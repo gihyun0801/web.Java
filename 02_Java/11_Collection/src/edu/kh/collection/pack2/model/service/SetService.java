@@ -280,7 +280,7 @@ public class SetService {
 		        Random random = new Random();
 		        lotto.add(random.nextInt(45) + 1);
 		    }
-
+ 
 		    list.add(lotto); // 생성된 TreeSet을 리스트에 추가
 		}
 		
