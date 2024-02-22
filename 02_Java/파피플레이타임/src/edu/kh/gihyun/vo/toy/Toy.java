@@ -10,16 +10,21 @@ private int jeJo;
 private String items;
 
 
+
+
 @Override
 public String toString() {
 	return String.format("장난감이름 : %s / 사용가능연령 : %d  / 가격 : %d / 색상: %s / 제조년원일 : %d / 재료 : %s", 
 	toyName, ageException,price,color,jeJo,items		);
+	
+	
 }
 
 
 
 public Toy() {
 }
+
 
 
 
