@@ -72,6 +72,78 @@ public class TodoListServiceImpl implements TodoListService{
 		
 		return fomatterDateTime;
 	}
+
+	@Override
+	public List<Todo> detail() {
+		
+		List<Todo> list = dao.todoListFullView();
+		
+		return list;
+	}
+	
+	
+
+	@Override
+	public String detailLocal(LocalDateTime reDate) {
+
+	    DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+	    
+	    String regDate = reDate.format(format);
+	    
+	    return regDate;
+	
+	}
+	
+	
+
+	@Override
+	public void add(String title, String result) {
+		
+		
+		dao.add(title, result);
+		
+		
+		
+	}
+
+	
+	
+	//아무것도 안한다고해서 service 클래스를 사용안하면 안됀다
+	//규칙
+	
+
+	@Override
+	public boolean todoComplete(int index) {
+		
+		
+		
+		
+		
+		return dao.todoComplete(index);
+	}
+
+	
+	
+	@Override
+	public void update(int num, String title, String result) {
+		
+		dao.update(num, title, result);
+		
+	}
+
+	@Override
+	public boolean delete(String title) {
+		
+		
+		
+		
+		
+		return dao.delete(title);
+	}
+
+
+	
+
     
     
  }

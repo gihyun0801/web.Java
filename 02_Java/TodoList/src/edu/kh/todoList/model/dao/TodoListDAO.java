@@ -11,8 +11,16 @@ public interface TodoListDAO {
 	//return todoList
 	public abstract List<Todo> todoListFullView();
 
-		
+		public void saveFile();
 	//필드
+
+		public abstract boolean todoComplete(int index);
+
+		public abstract void add(String title, String result);
+
+		public abstract void update(int num, String title, String result);
+
+		public abstract boolean delete(String title);
 	
 
 	

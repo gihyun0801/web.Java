@@ -18,6 +18,7 @@ import edu.kh.todoList.model.dto.Todo;
 public class TodoListDAOImpl implements TodoListDAO{
 
 	
+
 	private final String FILE_PATH = "C:/io_test/todoList.dat";
 	
     private ObjectInputStream ois = null;
@@ -108,5 +109,103 @@ public class TodoListDAOImpl implements TodoListDAO{
 		return todoList;
 	}
     
+	
+	
+	public void saveFile() {
+		
+		
+		try {
+			oos = new ObjectOutputStream(new FileOutputStream(FILE_PATH));
+			oos.writeObject(todoList);
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			
+			
+			try {
+				if(oos != null) {
+					oos.close();
+				}
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+		
+			
+		}
+	
+		
+		
+	}
+
+
+
+	@Override
+	public boolean todoComplete(int index) {
+		
+		
+		if(index < 0 || index >= todoList.size()) return false;
+		
+		
+		boolean complete = todoList.get(index).isComplete();
+		
+		todoList.get(index).setComplete(!complete);
+		
+		saveFile();
+		
+		
+		
+		
+		
+		return true;
+	}
+
+
+
+	@Override
+	public void add(String title, String result) {
+		
+		todoList.add(new Todo(title,result,false,LocalDateTime.now()));
+		
+		saveFile();
+		
+		
+		
+	}
+
+
+
+	@Override
+	public void update(int num, String title, String result) {
+		
+		todoList.set(num, new Todo(title,result,false,LocalDateTime.now()));
+		
+		saveFile();
+		
+		
+	}
+
+
+
+	@Override
+	public boolean delete(String title) {
+		
+		
+		for(Todo list  : todoList) {
+			
+			if(list.getTitle().equals(title)) {
+				todoList.remove(list);
+				saveFile();
+				return true;
+			}
+			
+		}
+		
+		
+		
+		
+		return false;
+	}
+	
 	
 }
